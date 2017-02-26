@@ -1,0 +1,34 @@
+#extend("base")
+
+#export("head") {
+	<title>Let's Get Schwifty!</title>
+	<link rel="stylesheet" href="/styles/home.css">
+}
+
+#export("body") {
+    <div class="posts">
+		<ul class="featured">
+			#loop(featuredPosts, "post") {
+				<a href="/#(post.url)">
+					<li>
+						<span class="post-title">
+							#(post.title)
+						</span>
+					</li>
+				</a>
+			}
+		</ul>
+
+		<ul class="all">
+			#loop(posts, "post") {
+				<li>
+					<a href="/#(post.url)">
+						<span class="post-title">#(post.title)</span>
+					<!-- <p>#(post.summary)</p> -->
+					</a>
+				</li>
+			}
+		</ul>
+    </div>
+</div>
+}

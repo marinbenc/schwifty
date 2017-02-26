@@ -1,0 +1,35 @@
+#extend("base")
+
+#export("head") {
+	<title>#(title)</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/home.css">
+	<link rel="stylesheet" href="/styles/github-markdown.css">
+	<link rel="stylesheet" href="/styles/post.css">
+}
+
+#export("body") {
+	<div class="post-title">
+		<h1 class="title">#(title)</h1>
+
+		<div class="markdown-body">
+			#raw(content)
+		</div>
+	</div>
+
+    <div class="posts">
+        <ul class="featured">
+            #loop(featuredArticles, "article") {
+                <a href="/#(article.url)">
+                <li>
+                    <span class="post-title">
+                        #(article.title)
+                    </span>
+                </li>
+                </a>
+            }
+        </ul>
+    </div>
+
+}

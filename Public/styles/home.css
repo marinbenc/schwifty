@@ -1,0 +1,61 @@
+.posts .featured {
+    display: block;
+    margin-top: 80px;
+    margin-right: -20px;
+    overflow: hidden;
+}
+
+.posts .featured a {
+    text-decoration: none;
+    color: #000;
+}
+
+.posts .all a {
+    text-decoration: none;
+}
+
+.posts .all {
+    margin: 80px 0;
+    max-width: 500px;
+}
+
+.posts .featured li {
+    width: 47.5%;
+    min-height: 100px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    float: left;
+    border: 3px solid #ffa500;
+    -webkit-transition: color 0.2s, border 0.2s;
+    transition: color 0.2s, border 0.2s;
+}
+
+.posts .featured li:hover {
+    color: #ffa500;
+    border: 3px solid #ffa500;
+}
+
+.posts .post-title {
+    line-height: 1.4;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.posts .all li {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 975px) {
+
+    .posts .featured {
+        margin-right: 0;
+    }
+
+    .posts .featured li {
+        min-height: 60px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+}

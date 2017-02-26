@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    #import("head")
+</head>
+    <body>
+    	<div class="main">
+			<div class="header">
+	
+				<div class="intro">
+                <a href="/">
+					<h1 class="title">Let's Get Schwifty!</h1>
+					<h3 class="tagline">A Swift blog.</h3>
+                </a>
+				</div>
+		
+				<nav>
+					<ul>
+						#loop(navigationLinks, "link") {
+							<li><a href="/#(link.url)">#(link.title)</a></li>
+						}
+					</ul>
+				</nav>
+	
+			</div>
+        	
+        	#import("body")
+
+    		<hr />
+
+		    <div class="footer">
+    			<a href=""><span class="to-top-link">Go to top</span></a>
+    			<p class="powered-by">This website is powered by <a href="github.com">a tiny blogging engine written in Swift</a>.</p>
+    			<p class="copyright">Copyright 2017.</p>
+    		</div>
+        </div>
+    </body>
+</html>

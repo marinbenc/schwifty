@@ -1,0 +1,12 @@
+
+.post-title {
+	font-size: 25px;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.markdown-body {
+	font-size: 18px;
+	max-width: 720px;
+	margin-bottom: 80px;
+}
