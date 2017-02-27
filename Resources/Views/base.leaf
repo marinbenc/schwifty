@@ -33,7 +33,7 @@
 
 		    <div class="footer">
     			<a href=""><span class="to-top-link">Go to top</span></a>
-    			<p class="powered-by">This website is powered by <a href="github.com">a tiny blogging engine written in Swift</a>.</p>
+    			<p class="powered-by">This website is powered by <a href="https://github.com/marinbenc/schwifty">a tiny blogging engine written in Swift</a>.</p>
     			<p class="copyright">Copyright 2017.</p>
     		</div>
         </div>
