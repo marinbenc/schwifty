@@ -1,7 +1,7 @@
 
 This is a static site generator made for blogs, written in Swift.
 
-It's made for marinbenc.com and I don't guarantee it will work for your purposes, but feel free to use it if you want to.
+It's made for http://marinbenc.com and I don't guarantee it will work for your purposes, but feel free to use it if you want to.
 
 ## Usage
 
