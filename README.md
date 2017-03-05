@@ -33,6 +33,10 @@ The normalized title of the post will become the URL for that post, so going to 
 
 Adding pages works the same as adding posts, except you add files to the `Resources/Pages` directory. The navigation bar will update once you re-run the project with your new page.
 
+## Planned features:
+
+ - [ ] RSS Support
+
 ## License: MIT
 
 Copyright (c) 2017 Marin Benčević
